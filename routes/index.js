@@ -1,7 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const MONGO_URI =
-  
+const MONGODB_URI =
+
+
 const Movie = require("../models/Movie.model");
 
 /* GET home page */

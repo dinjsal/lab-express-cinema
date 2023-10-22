@@ -1,16 +1,19 @@
-<div>
-    <img src="{{movies.image}}" alt="movie-photo"/>
-    <br>
-    <p>{{movies.title}}
-    <br>
-    Director: {{movies.director}}
-    <br>
-    Actors: {{movies.stars}}
-    <br>
-    Description: {{movies.description}}
-    <br>
-    Showtimes: {{movies.showtimes}}
-    <br>
-    <a href="/">Back to Hompage</a> &nbsp &nbsp &nbsp <a href="/movies">Back to Movies</a>
-    </p> 
+<div id="more">
+    <div>
+        <img id="image-more" src="{{movies.image}}" alt="movie-photo"/>
+    </div>
+    <div>
+        <p><h1>{{movies.title}}</h1>
+        <span>Director:</span> {{movies.director}}
+        <br>
+        <span>Actors:</span> {{movies.stars}}
+        <br>
+        <span>Description:</span> {{movies.description}}
+        <br>
+        <span>Showtimes:</span> {{movies.showtimes}}
+        <br>
+        <br>
+        <a href="/">Back to Homepage</a> &nbsp &nbsp &nbsp <a href="/movies">Back to Movies</a>
+        </p> 
+    </div>
 </div>
