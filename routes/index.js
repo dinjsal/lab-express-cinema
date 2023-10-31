@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const MONGODB_URI =
-
+const MONGODB_URI = process.env.MONGODB_URI;
 
 const Movie = require("../models/Movie.model");
 
@@ -19,8 +18,8 @@ router.get("/movies", (req, res) => {
 // Single movie GET with back to homepage link
 
 router.get("/movie/:id", (req, res) => {
-  const bookId = req.params.id;
-  Movie.findById(bookId)
+  const movieId = req.params.id;
+  Movie.findById(movieId)
     .then((response) => {
       res.render("more", { movies: response });
     })
