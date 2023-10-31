@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const MONGODB_URI = process.env.MONGODB_URI;
 
 const Movie = require("../models/Movie.model");
 
